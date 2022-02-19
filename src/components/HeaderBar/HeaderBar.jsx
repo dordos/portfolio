@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import logo from '../../icon/headerIcon/vscode_icon.svg';
 
 const HeaderBar = () => {
@@ -30,8 +31,7 @@ const HeaderBar = () => {
 export default HeaderBar;
 
 const HeaderBarWarp = styled.div`
-  background-color: #2e2e2e;
-  /* background-color: #24292e; */
+  background-color: #24292e;
   /* border-bottom: 1px solid #191d20; */
   display: flex;
   justify-content: center;
