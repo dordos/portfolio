@@ -1,34 +1,22 @@
 import React from 'react';
-import HeaderBar from './components/HeaderBar/HeaderBar';
-import SideBarIcon from './components/SideBar/SideBarIcon';
 import styled from 'styled-components';
-import SideBarList from './components/SideBar/SideBarList';
+import HeaderBar from './components/HeaderBar/HeaderBar';
 import FooterBar from './components/Footer/FooterBar';
-import Main from './components/Main/Main';
+import MainContainer from './components/Main/MainContainer';
 
 function App() {
   return (
-    <Container>
+    <Wrap>
       <HeaderBar />
-
-      <SideWrap>
-        <SideBarIcon />
-        <SideBarList />
-        <Main />
-      </SideWrap>
-
+      <MainContainer />
       <FooterBar />
-    </Container>
+    </Wrap>
   );
 }
 
 export default App;
 
-const Container = styled.div`
+const Wrap = styled.div`
   display: flex;
   flex-direction: column;
-`;
-
-const SideWrap = styled.div`
-  display: flex;
 `;

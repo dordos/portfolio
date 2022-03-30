@@ -1,32 +1,23 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import sourceControl from '../../icon/footerIcon/source-control.svg';
-import sync from '../../icon/footerIcon/sync.svg';
-import error from '../../icon/footerIcon/error.svg';
-import warning from '../../icon/footerIcon/warning.svg';
-import nameSpace from '../../icon/footerIcon/symbol-namespace.svg';
-import broadcast from '../../icon/footerIcon/broadcast.svg';
-import check from '../../icon/footerIcon/check.svg';
-import bell from '../../icon/footerIcon/bell.svg';
-
 const FooterBar = () => {
   return (
     <FooterBarWarp>
       <LeftWrap>
         <div className='footerItem'>
-          <img src={sourceControl} alt='' />
+          <img src='icon/footerIcon/source-control.svg' alt='' />
           <span>main＊</span>
         </div>
         <div className='footerItem'>
-          <img src={sync} alt='' />
+          <img src='icon/footerIcon/sync.svg' alt='' />
         </div>
         <div className='footerItem'>
-          <img src={error} alt='' />
+          <img src='icon/footerIcon/error.svg' alt='' />
           <span>0</span>
         </div>
         <div className='footerItem'>
-          <img src={warning} alt='' />
+          <img src='icon/footerIcon/warning.svg' alt='' />
           <span>0</span>
         </div>
       </LeftWrap>
@@ -49,7 +40,7 @@ const FooterBar = () => {
         </div>
 
         <div className='footerItem'>
-          <img src={nameSpace} alt='' />
+          <img src='icon/footerIcon/symbol-namespace.svg' alt='' />
         </div>
 
         <div className='footerItem'>
@@ -57,16 +48,16 @@ const FooterBar = () => {
         </div>
 
         <div className='footerItem'>
-          <img src={broadcast} alt='' />
+          <img src='icon/footerIcon/broadcast.svg' alt='' />
           <span>Go Live</span>
         </div>
 
         <div className='footerItem'>
-          <img src={check} alt='' />
+          <img src='icon/footerIcon/check.svg' alt='' />
           <span>Prettier</span>
         </div>
 
-        <img src={bell} alt='' />
+        <img src='icon/footerIcon/bell.svg' alt='' />
       </RightWrap>
     </FooterBarWarp>
   );

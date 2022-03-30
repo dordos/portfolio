@@ -1,13 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import logo from '../../icon/headerIcon/vscode_icon.svg';
-
 const HeaderBar = () => {
   return (
     <HeaderBarWarp>
       <LeftText>
-        <img src={logo} alt='' />
+        <img src='icon/headerIcon/vscode_icon.svg' alt='' />
         <span>File</span>
         <span>Edit</span>
         <span>View</span>
