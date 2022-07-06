@@ -74,13 +74,12 @@ export const Header = styled.div`
 // Main
 //--------------------------------------------------------------
 
-export const Main = styled.div`
+export const MainContainer = styled.div`
   display: flex;
-  background-color: red;
   height: 100%;
 `;
 
-export const IconWarp = styled.div`
+export const Icon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -91,35 +90,6 @@ export const IconWarp = styled.div`
     width: 25px;
     height: 25px;
     padding: 10px 10px;
-  }
-`;
-
-// -------------------------------------------------------------
-// footer
-//--------------------------------------------------------------
-export const Footer = styled.div`
-  background-color: #0065c9;
-  display: flex;
-  justify-content: space-between;
-  height: 20px;
-  padding: 0px 15px;
-  img {
-    width: 15px;
-    height: 15px;
-  }
-  .footerItem {
-    display: flex;
-    padding: 0px 8px;
-    font-size: 13px;
-    color: #c5c5c5;
-    img {
-      margin-right: 5px;
-    }
-  }
-
-  & > div {
-    display: flex;
-    align-items: center;
   }
 `;
 
@@ -152,6 +122,28 @@ export const MiddleWrap = styled.div`
   }
 `;
 
+export const SideBarMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  div {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px 10px 30px;
+    img {
+      margin-right: 5px;
+      width: 20px;
+    }
+    :hover {
+      background-color: #2b292f;
+    }
+    span {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  }
+`;
+
 export const ItemTile = styled.div`
   display: flex;
   align-items: center;
@@ -167,5 +159,38 @@ export const BottomWrap = styled.div`
   div {
     color: #c5c5c5;
     border-top: 1px solid black;
+  }
+`;
+
+export const Content = styled.div`
+  width: 100%;
+`;
+
+// -------------------------------------------------------------
+// footer
+//--------------------------------------------------------------
+export const Footer = styled.div`
+  background-color: #0065c9;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  padding: 0px 15px;
+  img {
+    width: 15px;
+    height: 15px;
+  }
+  .footerItem {
+    display: flex;
+    padding: 0px 8px;
+    font-size: 13px;
+    color: #c5c5c5;
+    img {
+      margin-right: 5px;
+    }
+  }
+
+  & > div {
+    display: flex;
+    align-items: center;
   }
 `;

@@ -1,4 +1,4 @@
-export default [
+const menuList = [
   {
     id: 0,
     COMPONENT: 'Home',
@@ -36,3 +36,5 @@ export default [
     icon: 'icon/listIcon/git_icon.svg',
   },
 ];
+
+export default menuList;

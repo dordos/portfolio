@@ -3,10 +3,8 @@ import React from 'react';
 const Git = () => {
   return (
     <div>
-      <h2>22</h2>
-      <h3>dd</h3>
+      <h1>git</h1>
     </div>
   );
 };
-
 export default Git;

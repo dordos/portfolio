@@ -1,22 +1,9 @@
-import React from 'react';
 import styled from 'styled-components';
-import homebg from '../img/home_bg2.jpg';
 
-const Home = () => {
-  return (
-    <Main>
-      <div>
-        <p>I'm a Front-End</p>
-        <p>Developer</p>
-      </div>
-    </Main>
-  );
-};
+const homebg = require('../../img/home_bg2.jpg');
 
-export default Home;
-
-const Main = styled.div`
-  height: calc(100vh - 83px);
+export const HomeContent = styled.div`
+  height: 100%;
   width: 100%;
   text-align: center;
   opacity: 0.8;
