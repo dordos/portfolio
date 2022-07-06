@@ -2,15 +2,20 @@ import React from 'react';
 import styled from 'styled-components';
 import Home from '../../page/Home.jsx';
 import About from '../../page/About.jsx';
-import { useState } from 'react/cjs/react.production.min';
+// import { useState } from 'react/cjs/react.production.min';
+import menu from '../../data/Menu';
+import reactDom from 'react-dom';
+
 // import Skills from '../../page/Skills.jsx';
 // import project from '../../page/project.jsx';
 // import Contact from '../../page/Contact.jsx';
 // import Git from '../../page/Git.jsx';
 
 const Main = () => {
-  const [nav, setnav] = useState([]);
-
+  // const [nav, setnav] = useState([]);
+  const menuList = menu.map((item) => {
+    return item;
+  });
   return (
     <MainContainer>
       <SideContainer>
@@ -39,30 +44,8 @@ const Main = () => {
               <img src='icon/listIcon/folder-src-open.svg' alt='' />
               <span>PORTFOLIO</span>
             </ItemTile>
-            <Items>
-              <img src='icon/listIcon/favicon.svg' alt='' />
-              <span>home.ico</span>
-            </Items>
-            <Items>
-              <img src='icon/listIcon/html_icon.svg' alt='' />
-              <span>about.html</span>
-            </Items>
-            <Items>
-              <img src='icon/listIcon/react_icon.svg' alt='' />
-              <span>skills.jsx</span>
-            </Items>
-            <Items>
-              <img src='icon/listIcon/js_icon.svg' alt='' />
-              <span>project.js</span>
-            </Items>
-            <Items>
-              <img src='icon/listIcon/css_icon.svg' alt='' />
-              <span>contact.css</span>
-            </Items>
-            <Items>
-              <img src='icon/listIcon/git_icon.svg' alt='' />
-              <span>github.ico</span>
-            </Items>
+
+            <SideBarMenu menuList={menuList} />
           </MiddleWrap>
 
           <BottomWrap>
@@ -81,30 +64,9 @@ const Main = () => {
       <ContentContainer>
         <Menubar>
           <ul>
-            {/* <li>
-              <img src='icon/listIcon/favicon.svg' alt='' />
-              <span>home.ico</span>
-            </li>
-            <li>
-              <img src='icon/listIcon/html_icon.svg' alt='' />
-              <span>about.html</span>
-            </li>
-            <li>
-              <img src='icon/listIcon/react_icon.svg' alt='' />
-              <span>skills.jsx</span>
-            </li>
-            <li>
-              <img src='icon/listIcon/js_icon.svg' alt='' />
-              <span>project.js</span>
-            </li>
-            <li>
-              <img src='icon/listIcon/css_icon.svg' alt='' />
-              <span>contact.css</span>
-            </li>
-            <li>
-              <img src='icon/listIcon/git_icon.svg' alt='' />
-              <span>github</span>
-            </li> */}
+            {menu.map((menuList, count) => {
+              return <Menu key={menuList.id} menuIcon={menuList.icon} menuName={menuList.name} />;
+            })}
           </ul>
           <div className='rightTabNav'>
             <img src='icon/listIcon/git-compare.svg' alt='' />
@@ -113,13 +75,53 @@ const Main = () => {
           </div>
         </Menubar>
 
-        <About />
+        <Home />
       </ContentContainer>
     </MainContainer>
   );
 };
 
 export default Main;
+
+const Menu = (props) => {
+  return (
+    <li>
+      <img src={props.menuIcon} alt='' />
+      <span>{props.menuName}</span>
+    </li>
+  );
+};
+
+const SideBarMenu = (props) => {
+  const list = [];
+
+  props.menuList.map((item) => {
+    list.push(
+      <div>
+        <img src={item.icon} alt='' />
+        <span>{item.name}</span>
+      </div>,
+    );
+  });
+
+  // const SideBarMenu = styled.div`
+  //   display: flex;
+  //   padding: 4px 10px 4px 30px;
+  //   cursor: pointer;
+  //   img {
+  //     margin-right: 5px;
+  //     width: 20px;
+  //   }
+  //   :hover {
+  //     background-color: #2b292f;
+  //   }
+  //   span {
+  //     font-weight: 500;
+  //   }
+  // `;
+
+  return list;
+};
 
 const MainContainer = styled.div`
   display: flex;
@@ -182,22 +184,6 @@ const ItemTile = styled.div`
 
   span {
     margin-left: 5px;
-  }
-`;
-
-const Items = styled.div`
-  display: flex;
-  padding: 4px 10px 4px 30px;
-  cursor: pointer;
-  img {
-    margin-right: 5px;
-    width: 20px;
-  }
-  :hover {
-    background-color: #2b292f;
-  }
-  span {
-    font-weight: 500;
   }
 `;
 
