@@ -25,10 +25,12 @@ import Git from './page/Git';
 import { useState } from 'react';
 
 const App = () => {
-  const [page, setPage] = useState('Home');
+  const [page, setPage] = useState('');
 
   const selectMenu = (e: any) => {
     setPage(e.currentTarget.id);
+    // console.log(page);
+    // <Route element={`<${page}/>`} />;
     // if(e.currentTarget
   };
   return (
@@ -84,12 +86,15 @@ const App = () => {
               </ItemTile>
 
               <SideBarMenu>
-                {menu.map((item) => {
+                {menu.map((item, key) => {
                   return (
-                    <div id={item.COMPONENT} onClick={selectMenu}>
-                      <img src={item.icon} alt='' />
-                      <span>{item.name}</span>
-                    </div>
+                    <Link to={item.COMPONENT}>
+                      {/* {item.COMPONENT} */}
+                      <div key={key} id={item.COMPONENT}>
+                        <img src={item.icon} alt='' />
+                        <span>{item.name}</span>
+                      </div>
+                    </Link>
                   );
                 })}
               </SideBarMenu>
@@ -106,12 +111,15 @@ const App = () => {
               </div>
             </BottomWrap>
           </MenuListWrap>
-
           <Content>
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/home' element={<Home />} />
               <Route path='/about' element={<About />} />
+              <Route path='/skills' element={<Skills />} />
+              <Route path='/project' element={<Project />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/git' element={<Git />} />
             </Routes>
           </Content>
         </MainContainer>
