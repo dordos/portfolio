@@ -96,9 +96,9 @@ export const Icon = styled.div`
 export const MenuListWrap = styled.div`
   display: flex;
   flex-direction: column;
+  width: 200px;
   justify-content: space-between;
   background-color: #1c1c1d;
-  width: 200px;
 `;
 
 export const TopWrap = styled.div`
@@ -129,7 +129,7 @@ export const SideBarMenu = styled.div`
   div {
     display: flex;
     align-items: center;
-    padding: 10px 5px 10px 30px;
+    padding: 10px 20px 10px 30px;
     img {
       margin-right: 5px;
       width: 20px;
