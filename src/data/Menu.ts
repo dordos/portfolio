@@ -2,37 +2,37 @@ const menuList = [
   {
     id: 0,
     COMPONENT: 'Home',
-    name: 'home.ico',
+    name: 'Home',
     icon: 'icon/listIcon/favicon.svg',
   },
   {
     id: 1,
     COMPONENT: 'About',
-    name: 'about.html',
+    name: 'About',
     icon: 'icon/listIcon/html_icon.svg',
   },
   {
     id: 2,
     COMPONENT: 'Skills',
-    name: 'skills.jsx',
+    name: 'Skills',
     icon: 'icon/listIcon/react_icon.svg',
   },
   {
     id: 3,
     COMPONENT: 'Project',
-    name: 'project.js',
+    name: 'Project',
     icon: 'icon/listIcon/js_icon.svg',
   },
   {
     id: 4,
     COMPONENT: 'Contact',
-    name: 'contact.css',
+    name: 'Contact',
     icon: 'icon/listIcon/css_icon.svg',
   },
   {
     id: 5,
     COMPONENT: 'Github',
-    name: 'github',
+    name: 'Github',
     icon: 'icon/listIcon/git_icon.svg',
   },
 ];

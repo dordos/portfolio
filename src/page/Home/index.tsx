@@ -1,13 +1,13 @@
 import React from 'react';
 import { HomeContent } from './style';
+import { Typing } from 'typing-effect-reactjs';
 
 const Home = () => {
+  const text = ['I,m a Front-End Developer'];
+
   return (
     <HomeContent>
-      <div>
-        <p>I'm a Front-End</p>
-        <p>Developer</p>
-      </div>
+      <Typing text={text} typeSpeed={150} disableBlinkingOnEnd={100} DlinkingSpeed={0} />
     </HomeContent>
   );
 };

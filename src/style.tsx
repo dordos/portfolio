@@ -15,48 +15,28 @@ export const Container = styled.div`
 //--------------------------------------------------------------
 
 export const Header = styled.div`
-  background-color: #24292e;
-  /* border-bottom: 1px solid #191d20; */
+  background-color: #181818;
+  /* background-color: #24292e; */
+  /* border-bottom: 1px solid #2d2d2e; */
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #ffffff;
+  color: #fbfbfb;
   font-family: Source Sans Pro, sans-serif;
   height: 30px;
   font-size: 0.85rem;
 
   & #left {
     display: flex;
-    flex: 1;
-    /* background-color: blue; */
     margin-left: 0.5rem;
     align-items: center;
-    img {
-      width: 20px;
-      margin-right: 0.5rem;
-    }
-    span {
-      padding: 0px 0.5rem;
-    }
-  }
 
-  & > p {
-    flex: 1;
-    text-align: center;
-  }
-
-  & #right {
-    display: flex;
-    flex: 1;
-    /* background-color: black; */
-    justify-content: flex-end;
-    padding-right: 5px;
     span {
       display: inline-block;
-      width: 15px;
-      height: 15px;
+      width: 12px;
+      height: 12px;
       border-radius: 50%;
-      margin: 0px 0.5rem;
+      margin: 0px 0.3rem;
     }
     span.red {
       background-color: #c53c3c;
@@ -67,6 +47,11 @@ export const Header = styled.div`
     span.green {
       background-color: #369636;
     }
+  }
+
+  & > p {
+    flex: 1;
+    text-align: center;
   }
 `;
 
@@ -83,7 +68,8 @@ export const Icon = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #262626;
+  background-color: #1c1c1d;
+  border-right: 1px solid #2d2d2e;
   height: calc(100vh - 49px);
   width: 50px;
   img {
@@ -104,9 +90,9 @@ export const MenuListWrap = styled.div`
 export const TopWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  color: #c5c5c5;
+  color: #7a7a7a;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 12px;
   padding: 10px 10px 10px 10px;
 `;
 
@@ -117,7 +103,7 @@ export const MiddleWrap = styled.div`
   }
 
   span {
-    color: #e1e4e8;
+    color: #fbfbfb;
     font-weight: 700;
   }
 `;
@@ -126,21 +112,27 @@ export const SideBarMenu = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  div {
+  a {
     display: flex;
     align-items: center;
-    padding: 10px 20px 10px 30px;
+    text-decoration: none;
+    width: 100px;
+    padding: 10px 60px 10px 30px;
     img {
       margin-right: 5px;
       width: 20px;
     }
     :hover {
-      background-color: #2b292f;
+      background-color: #262628;
     }
     span {
       font-size: 18px;
       font-weight: 700;
     }
+  }
+
+  & a.bgColor {
+    background-color: #262628;
   }
 `;
 
@@ -151,14 +143,19 @@ export const ItemTile = styled.div`
 
   span {
     margin-left: 5px;
+    color: #7a7a7a;
   }
 `;
 
 export const BottomWrap = styled.div`
   align-items: flex-end;
+  font-size: 12px;
   div {
-    color: #c5c5c5;
-    border-top: 1px solid black;
+    display: flex;
+    padding: 3px 1px;
+    align-items: center;
+    color: #7a7a7a;
+    border-top: 1px solid #2d2d2e;
   }
 `;
 
@@ -170,7 +167,7 @@ export const Content = styled.div`
 // footer
 //--------------------------------------------------------------
 export const Footer = styled.div`
-  background-color: #0065c9;
+  background-color: #181818;
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -183,7 +180,7 @@ export const Footer = styled.div`
     display: flex;
     padding: 0px 8px;
     font-size: 13px;
-    color: #c5c5c5;
+    color: #525252;
     img {
       margin-right: 5px;
     }

@@ -25,36 +25,25 @@ import Git from './page/Git';
 import { useState } from 'react';
 
 const App = () => {
-  const [page, setPage] = useState('');
-
   const selectMenu = (e: any) => {
-    setPage(e.currentTarget.id);
-    // console.log(page);
-    // <Route element={`<${page}/>`} />;
-    // if(e.currentTarget
+    // e.stopPropagation();
+    // e.preventDefault();
+    console.log('d');
+    console.log(e.target.className.classList.contains('bgColor'));
+    // ? e.target.className.remove('bgColor')
+    // : e.target.className.add('bgColor');
   };
   return (
     <BrowserRouter>
       <Container>
         <Header>
           <div id='left'>
-            <img src='icon/headerIcon/vscode_icon.svg' alt='' />
-            <span>File</span>
-            <span>Edit</span>
-            <span>View</span>
-            <span>Go</span>
-            <span>Run</span>
-            <span>Terminal</span>
-            <span>Help</span>
-          </div>
-
-          <p>Peter Portfolio</p>
-
-          <div id='right'>
             <span className='red'></span>
             <span className='yellow'></span>
             <span className='green'></span>
           </div>
+
+          <p>Peter Portfolio</p>
         </Header>
 
         <MainContainer>
@@ -88,12 +77,9 @@ const App = () => {
               <SideBarMenu>
                 {menu.map((item, key) => {
                   return (
-                    <Link to={item.COMPONENT}>
-                      {/* {item.COMPONENT} */}
-                      <div key={key} id={item.COMPONENT}>
-                        <img src={item.icon} alt='' />
-                        <span>{item.name}</span>
-                      </div>
+                    <Link key={key} to={item.COMPONENT} onClick={selectMenu} className=''>
+                      <img src={item.icon} alt='' />
+                      <span>{item.name}</span>
                     </Link>
                   );
                 })}
