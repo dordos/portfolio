@@ -8,7 +8,6 @@ export const HomeContent = styled.div`
   text-align: center;
   /* opacity: 0.8; */
   /* background: url(${homebg}) center/cover no-repeat; */
-  background: #262626;
   h4 {
     padding-top: 20%;
     margin: auto;

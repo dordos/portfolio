@@ -26,10 +26,11 @@ import { useState } from 'react';
 
 const App = () => {
   const selectMenu = (e: any) => {
-    // e.stopPropagation();
+    e.stopPropagation();
     // e.preventDefault();
-    console.log('d');
-    console.log(e.target.className.classList.contains('bgColor'));
+
+    console.log(e);
+    // const a = e.target.className.classList.contains('bgColor');
     // ? e.target.className.remove('bgColor')
     // : e.target.className.add('bgColor');
   };
@@ -75,14 +76,18 @@ const App = () => {
               </ItemTile>
 
               <SideBarMenu>
-                {menu.map((item, key) => {
-                  return (
-                    <Link key={key} to={item.COMPONENT} onClick={selectMenu} className=''>
-                      <img src={item.icon} alt='' />
-                      <span>{item.name}</span>
-                    </Link>
-                  );
-                })}
+                <ul>
+                  {menu.map((item, key) => {
+                    return (
+                      <Link key={key} to={item.COMPONENT} className='e'>
+                        <li onClick={selectMenu}>
+                          <img src={item.icon} alt='' />
+                          <span>{item.name}</span>
+                        </li>
+                      </Link>
+                    );
+                  })}
+                </ul>
               </SideBarMenu>
             </MiddleWrap>
 

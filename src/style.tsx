@@ -72,6 +72,7 @@ export const Icon = styled.div`
   border-right: 1px solid #2d2d2e;
   height: calc(100vh - 49px);
   width: 50px;
+  height: 100%;
   img {
     width: 25px;
     height: 25px;
@@ -112,19 +113,28 @@ export const SideBarMenu = styled.div`
   display: flex;
   flex-direction: column;
   cursor: pointer;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
   a {
-    display: flex;
-    align-items: center;
     text-decoration: none;
-    width: 100px;
-    padding: 10px 60px 10px 30px;
+    & :hover {
+      background-color: #262628;
+    }
+    li {
+      display: flex;
+      align-items: center;
+      padding: 10px 60px 10px 30px;
+      width: 100px;
+    }
     img {
       margin-right: 5px;
       width: 20px;
     }
-    :hover {
-      background-color: #262628;
-    }
+
     span {
       font-size: 18px;
       font-weight: 700;
@@ -161,6 +171,7 @@ export const BottomWrap = styled.div`
 
 export const Content = styled.div`
   width: 100%;
+  background-color: #262628;
 `;
 
 // -------------------------------------------------------------

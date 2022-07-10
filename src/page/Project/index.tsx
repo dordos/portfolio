@@ -1,10 +1,32 @@
 import React from 'react';
+import { ProjectContent, Projects, ProjectMenu } from './style';
 
 const Project = () => {
+  const projectImg1 = require('../../img/project1.png');
+
   return (
-    <div>
-      <h1>project</h1>
-    </div>
+    <ProjectContent>
+      <h1>Project</h1>
+      <ProjectMenu>
+        <li>All</li>
+        <li>JS</li>
+        <li>TS</li>
+        <li>React</li>
+        <li>ETC</li>
+      </ProjectMenu>
+
+      <Projects>
+        <div>
+          <img src={projectImg1} alt='' />
+        </div>
+        <div>
+          <img src={projectImg1} alt='' />
+        </div>
+        <div>
+          <img src={projectImg1} alt='' />
+        </div>
+      </Projects>
+    </ProjectContent>
   );
 };
 

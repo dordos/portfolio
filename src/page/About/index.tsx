@@ -1,10 +1,11 @@
 import React from 'react';
+import { AboutContent } from './style';
 
 const About = () => {
   return (
-    <div>
-      <h1>123</h1>
-    </div>
+    <AboutContent>
+      <div>123</div>
+    </AboutContent>
   );
 };
 
