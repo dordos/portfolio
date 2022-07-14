@@ -29,6 +29,12 @@ export const ProjectMenu = styled.ul`
     &:hover {
     }
   }
+  li:hover {
+    background-color: #17afca;
+  }
+  li.selectProject {
+    background-color: #17afca;
+  }
 `;
 
 export const Projects = styled.div`

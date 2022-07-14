@@ -96,7 +96,7 @@ const Skills = () => {
             />
           </li>
           <li>
-            <span>Styled-component</span>
+            <span>Styled-components</span>
             <ProgressBar
               completed={80}
               height={'6px'}

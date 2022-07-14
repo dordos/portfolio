@@ -26,14 +26,14 @@ import { useState } from 'react';
 
 const App = () => {
   const selectMenu = (e: any) => {
-    e.stopPropagation();
-    // e.preventDefault();
-
-    console.log(e);
-    // const a = e.target.className.classList.contains('bgColor');
-    // ? e.target.className.remove('bgColor')
-    // : e.target.className.add('bgColor');
+    e.preventDefault();
+    const list = e.currentTarget.parentElement.children;
+    for (let i = 0; i < list.length; i++) {
+      e.currentTarget.parentElement.children[i].className = '';
+    }
+    e.currentTarget.className = 'selectBg';
   };
+
   return (
     <BrowserRouter>
       <Container>
@@ -79,12 +79,12 @@ const App = () => {
                 <ul>
                   {menu.map((item, key) => {
                     return (
-                      <Link key={key} to={item.COMPONENT} className='e'>
-                        <li onClick={selectMenu}>
+                      <li key={key} className='' onClick={selectMenu}>
+                        <Link to={item.COMPONENT}>
                           <img src={item.icon} alt='' />
                           <span>{item.name}</span>
-                        </li>
-                      </Link>
+                        </Link>
+                      </li>
                     );
                   })}
                 </ul>

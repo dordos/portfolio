@@ -112,23 +112,23 @@ export const MiddleWrap = styled.div`
 export const SideBarMenu = styled.div`
   display: flex;
   flex-direction: column;
-  cursor: pointer;
 
   ul {
     padding: 0;
     margin: 0;
   }
+  li {
+    display: flex;
 
-  a {
-    text-decoration: none;
-    & :hover {
-      background-color: #262628;
-    }
-    li {
+    align-items: center;
+    width: 180px;
+    padding: 10px 0px 10px 50px;
+    a {
+      cursor: pointer;
+
       display: flex;
       align-items: center;
-      padding: 10px 60px 10px 30px;
-      width: 100px;
+      text-decoration: none;
     }
     img {
       margin-right: 5px;
@@ -140,8 +140,10 @@ export const SideBarMenu = styled.div`
       font-weight: 700;
     }
   }
-
-  & a.bgColor {
+  li:hover {
+    background-color: #262628;
+  }
+  li.selectBg {
     background-color: #262628;
   }
 `;

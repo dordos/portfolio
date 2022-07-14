@@ -8,7 +8,7 @@ const Project = () => {
     <ProjectContent>
       <h1>Project</h1>
       <ProjectMenu>
-        <li>All</li>
+        <li className='selectProject'>All</li>
         <li>JS</li>
         <li>TS</li>
         <li>React</li>
