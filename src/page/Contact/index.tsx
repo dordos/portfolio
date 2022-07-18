@@ -1,33 +1,47 @@
-import React from 'react';
+import React from "react";
+import {
+  ContactContainer,
+  ContactDescription,
+  ContactMap,
+  ContactInputs,
+  InputFirst,
+  InputThird,
+  InputSecond,
+} from "./style";
+import Map from "../../components/Map";
 
 const Contact = () => {
-  const position: [number, number] = [51.505, -0.09];
   return (
-    <div>
-      <div>
+    <ContactContainer>
+      <ContactDescription>
         <h1>Contact Me</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo harum amet consectetur, voluptates tenetur
-          exercitationem suscipit sed accusamus esse repudiandae blanditiis, et dolorum quibusdam sit ipsa quidem animi!
-          Pariatur, magni?
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+          harum amet consectetur, voluptates tenetur exercitationem suscipit sed
+          accusamus esse repudiandae blanditiis, et dolorum quibusdam sit ipsa
+          quidem animi! Pariatur, magni?
         </p>
 
-        <div>
-          <div>
-            <input type='text' />
-            <input type='text' />
-          </div>
-          <div>
-            <input type='text' />
-          </div>
-          <div>
-            <input type='text' />
-          </div>
-        </div>
+        <ContactInputs>
+          <InputFirst>
+            <input type="text" placeholder="Name" />
+            <input type="text" placeholder="Email" />
+          </InputFirst>
+          <InputSecond>
+            <input type="text" placeholder="Subject" />
+          </InputSecond>
+          <InputThird>
+            <textarea placeholder="Message" />
+          </InputThird>
+        </ContactInputs>
 
         <button>Send message</button>
-      </div>
-    </div>
+      </ContactDescription>
+
+      <ContactMap>
+        <Map></Map>
+      </ContactMap>
+    </ContactContainer>
   );
 };
 

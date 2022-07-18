@@ -8,6 +8,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
+
 `;
 
 //--------------------------------------------------------------
@@ -77,6 +78,10 @@ export const Icon = styled.div`
     width: 25px;
     height: 25px;
     padding: 10px 10px;
+  }
+
+  @media screen and (max-width:1500px){
+  display: none;
   }
 `;
 
@@ -204,3 +209,6 @@ export const Footer = styled.div`
     align-items: center;
   }
 `;
+
+
+
