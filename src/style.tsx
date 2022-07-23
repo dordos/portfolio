@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 //--------------------------------------------------------------
 // Container
@@ -8,7 +8,6 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   height: 100%;
-
 `;
 
 //--------------------------------------------------------------
@@ -80,8 +79,8 @@ export const Icon = styled.div`
     padding: 10px 10px;
   }
 
-  @media screen and (max-width:1500px){
-  display: none;
+  @media screen and (max-width: 1500px) {
+    display: none;
   }
 `;
 
@@ -91,6 +90,10 @@ export const MenuListWrap = styled.div`
   width: 200px;
   justify-content: space-between;
   background-color: #1c1c1d;
+
+  @media screen and (max-width: 1300px) {
+    display: none;
+  }
 `;
 
 export const TopWrap = styled.div`
@@ -209,6 +212,3 @@ export const Footer = styled.div`
     align-items: center;
   }
 `;
-
-
-

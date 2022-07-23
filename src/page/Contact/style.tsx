@@ -1,43 +1,35 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 100%;
   display: flex;
-  h1{
+  h1 {
     font-size: 30px;
   }
-  
-  p{
+
+  p {
   }
-  //background: red;
 `;
 
 export const ContactDescription = styled.div`
-  flex:1 1;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-& button{
-  width: 200px;
-  height: 80px;
-  background-color: #1c1c1d;
-  border: 0;
-  cursor: pointer;
-  font-size: 32px;
-  color: #eeffff;
-  
-}
-`
-export const ContactMap = styled.div`
-  flex:1 1;
+  & button {
+    width: 200px;
+    height: 80px;
+    background-color: #1c1c1d;
+    border: 0;
+    cursor: pointer;
+    font-size: 32px;
+    color: #eeffff;
+  }
+`;
 
-  background: blue;
-`
-
-export const ContactInputs =styled.div`
-  
-  & input{
+export const ContactInputs = styled.div`
+  & input {
     width: 300px;
     height: 50px;
     font-size: 20px;
@@ -47,23 +39,21 @@ export const ContactInputs =styled.div`
     outline: none;
     caret-color: #eeffff;
     color: #eeffff;
-
   }
-`
+`;
 
 export const InputFirst = styled.div`
-  & input{
-  margin: 5px;
+  & input {
+    margin: 5px;
   }
-`
+`;
 
 export const InputSecond = styled.div`
   & input {
     width: 614px;
     margin: 5px;
-
   }
-`
+`;
 
 export const InputThird = styled.div`
   & textarea {
@@ -79,6 +69,16 @@ export const InputThird = styled.div`
     outline: none;
     resize: none;
     caret-color: #eeffff;
-
   }
-`
+`;
+
+export const ContactSocials = styled.div`
+  width: 50%;
+  h1 {
+    font-size: 46px;
+  }
+  span,
+  a {
+    font-size: 32px;
+  }
+`;

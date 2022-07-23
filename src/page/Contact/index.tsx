@@ -2,15 +2,15 @@ import React from "react";
 import {
   ContactContainer,
   ContactDescription,
-  ContactMap,
   ContactInputs,
   InputFirst,
   InputThird,
   InputSecond,
+  ContactSocials,
 } from "./style";
-import Map from "../../components/Map";
 
 const Contact = () => {
+  const socialsTitle = `.socials {`;
   return (
     <ContactContainer>
       <ContactDescription>
@@ -37,10 +37,25 @@ const Contact = () => {
 
         <button>Send message</button>
       </ContactDescription>
-
-      <ContactMap>
-        <Map></Map>
-      </ContactMap>
+      <ContactSocials>
+        <h1>{socialsTitle}</h1>
+        <div>
+          <span>e-mail : </span>
+          <a>pdhssf@gmail.com</a>
+        </div>
+        <div>
+          <span>web-site : </span>
+          <a>www.abc.com</a>
+        </div>
+        <div>
+          <span>github : </span>
+          <a>https://github.com/dordos</a>
+        </div>
+        <div>
+          <span>linkedin : </span>
+          <a>wwww</a>
+        </div>
+      </ContactSocials>
     </ContactContainer>
   );
 };

@@ -22,8 +22,6 @@ import menu from "./data/Menu";
 import Project from "./page/Project";
 import Contact from "./page/Contact";
 import Git from "./page/Git";
-import { useState } from "react";
-import { loadMapApi } from "./components/LoadMapApi";
 
 const App = () => {
   const selectMenu = (e: any) => {
@@ -33,15 +31,6 @@ const App = () => {
     }
     e.currentTarget.className = "selectBg";
   };
-
-  const MAP_KEY = process.env.REACT_APP_MAP_API_KEY;
-  const [scriptLoaded, setScriptLoaded] = useState(false);
-  useEffect(() => {
-    const googleMapScript = loadMapApi();
-    googleMapScript.addEventListener("load", function () {
-      setScriptLoaded(true);
-    });
-  }, []);
 
   return (
     <BrowserRouter>

@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="013dbc29-bea8-4c77-b436-9b0c89e82194" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LoadMapApi.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/people1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LoadMapApi.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Map.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/Menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Menu.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/About/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/About/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/About/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/About/style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/Contact/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Contact/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/Contact/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Contact/style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/Project/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Project/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/Project/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Project/style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/Skills/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Skills/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/Skills/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Skills/style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/dordos/development/git-project/portfolio/src",
+    "last_opened_file_path": "/Users/dordos/development/git-project/portfolio/src/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +61,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -87,7 +94,7 @@
       <workItem from="1657996100770" duration="8079000" />
       <workItem from="1658004461988" duration="19861000" />
       <workItem from="1658178646005" duration="2590000" />
-      <workItem from="1658181499653" duration="4081000" />
+      <workItem from="1658181499653" duration="23400000" />
     </task>
     <servers />
   </component>
@@ -104,6 +111,24 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/page/Project/style.tsx</url>
+          <line>72</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/page/Skills/style.tsx</url>
+          <line>32</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
