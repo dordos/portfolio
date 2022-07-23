@@ -3,7 +3,6 @@ import { AboutContent, AboutDescription, AboutPicture } from "./style";
 
 const About = () => {
   const peopleImg = require("../../img/people1.jpg");
-
   return (
     <AboutContent>
       <AboutDescription>

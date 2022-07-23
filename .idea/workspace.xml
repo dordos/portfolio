@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="013dbc29-bea8-4c77-b436-9b0c89e82194" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/img/people1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LoadMapApi.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Map.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/Menu.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/Menu.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/About/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/About/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/About/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/About/style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/Contact/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Contact/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/Contact/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Contact/style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/Project/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Project/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/Project/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Project/style.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/Skills/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Skills/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/Skills/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/Skills/style.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/style.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/style.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,27 +34,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/dordos/development/git-project/portfolio/src/img",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "prettierjs.PrettierConfiguration.Package": "/Users/dordos/.config/yarn/global/node_modules/prettier",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "ts.external.directory.path": "/Users/dordos/development/git-project/portfolio/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/dordos/development/git-project/portfolio/src/img&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/dordos/.config/yarn/global/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/dordos/development/git-project/portfolio/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/img" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/img" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -94,7 +89,9 @@
       <workItem from="1657996100770" duration="8079000" />
       <workItem from="1658004461988" duration="19861000" />
       <workItem from="1658178646005" duration="2590000" />
-      <workItem from="1658181499653" duration="23400000" />
+      <workItem from="1658181499653" duration="25448000" />
+      <workItem from="1658602516550" duration="3338000" />
+      <workItem from="1658606410399" duration="2766000" />
     </task>
     <servers />
   </component>
@@ -118,13 +115,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/page/Project/style.tsx</url>
           <line>72</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/page/Skills/style.tsx</url>
           <line>32</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

@@ -53,8 +53,16 @@ export const Header = styled.div`
     flex: 1;
     text-align: center;
   }
+
+  @media screen and (max-width: 1300px) {
+    height: 60px;
+  }
 `;
 
+export const TopMenu = styled.div`
+  cursor: pointer;
+  margin-right: 0.5rem;
+`;
 //--------------------------------------------------------------
 // Main
 //--------------------------------------------------------------

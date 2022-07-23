@@ -16,13 +16,15 @@ import {
   MenuListWrap,
   SideBarMenu,
   Content,
+  TopMenu,
 } from "./style";
 
 import menu from "./data/Menu";
 import Project from "./page/Project";
 import Contact from "./page/Contact";
 import Git from "./page/Git";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 const App = () => {
   const selectMenu = (e: any) => {
     const list = e.currentTarget.parentElement.children;
@@ -43,6 +45,10 @@ const App = () => {
           </div>
 
           <p>Peter Portfolio</p>
+
+          <TopMenu>
+            <FontAwesomeIcon icon={faBars} size="3x" />
+          </TopMenu>
         </Header>
 
         <MainContainer>
